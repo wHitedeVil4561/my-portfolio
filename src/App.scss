@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .box-shadow-10 {
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  }
+  .linear-gradient-1 {
+    background: linear-gradient(145deg, #1e2024, #23272b);
+  }
+  .linear-gradient-2 {
+    background: linear-gradient(to right bottom, #212428, #16181c);
+  }
+  .linear-gradient-3{
+    background: linear-gradient(109.08deg, #EC6F66 0%, #F3A183 98.01%);
+  }
+  .linear-gradient-4{
+    background: linear-gradient(109.08deg, #FF66C0 0%, #FF9DB4 98.01%);;
+  }
+  .inner-shadow {
+    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset,
+      -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+  }
+}
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+.w-90 {
+  width: 90%;
+}
+.designation {
+  width: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.2rem solid #f2494f;
+  animation: typewritter 1.5s forwards infinite;
+}
+
+@keyframes typewritter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 280px;
+  }
+}
+.html {
+  width: 0;
+  animation: htmlanimation 1.5s forwards;
+}
+@keyframes htmlanimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+.css-skill {
+  width: 0;
+  animation: cssanimation 1.5s forwards;
+}
+@keyframes cssanimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+.javascript {
+  width: 0;
+  animation: javascriptanimation 1.5s forwards;
+}
+@keyframes javascriptanimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+.react {
+  width: 0;
+  animation: reactanimation 1.5s forwards;
+}
+@keyframes reactanimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
