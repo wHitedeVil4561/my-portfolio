@@ -9,8 +9,8 @@ const Features = () => {
         <div className="text-darkred">Features</div>
         <div className="text-3xl tracking-widest text-neu">What I Do</div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
-        <div className="flex flex-col gap-5 linear-gradient-1 box-shadow-10 p-5 rounded-lg hover:linear-gradient-2 cursor-pointer">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
+        <div className="flex flex-col gap-5 linear-gradient-1 box-shadow-10 p-5 rounded-lg hover:linear-gradient-2 hover:scale-100 scale-95 cursor-pointer">
           <div className="icon w-[60px] h-[60px]">
             <img src={angular} />
           </div>
@@ -26,7 +26,7 @@ const Features = () => {
           </div>
           <div className=""></div>
         </div>
-        <div className="flex flex-col gap-5 linear-gradient-1 box-shadow-10 p-5 rounded-lg hover:linear-gradient-2 cursor-pointer">
+        <div className="flex flex-col gap-5 linear-gradient-1 box-shadow-10 p-5 rounded-lg hover:linear-gradient-2 hover:scale-100 scale-95 cursor-pointer">
           <div className="icon w-[60px] h-[60px]">
             <img src={reactlogo} />
           </div>
@@ -42,7 +42,7 @@ const Features = () => {
           </div>
           <div className=""></div>
         </div>
-        <div className="flex flex-col gap-5 linear-gradient-1 box-shadow-10 p-5 rounded-lg hover:linear-gradient-2 cursor-pointer">
+        <div className="flex flex-col gap-5 linear-gradient-1 box-shadow-10 p-5 rounded-lg hover:linear-gradient-2 hover:scale-100 scale-95 cursor-pointer">
           <div className="icon w-[60px] h-[60px]">
             <img src={nodejs} />
           </div>

@@ -1,5 +1,8 @@
 import React from "react";
 import handshake from "../assets/img/handshake.jpg";
+import linkedin from "../assets/img/linkedin.svg";
+import github from "../assets/img/github.svg";
+import instagram from "../assets/img/instagram.svg";
 const Contact = () => {
   return (
     <div className="flex flex-col gap-5">
@@ -27,11 +30,17 @@ const Contact = () => {
             </div>
           </div>
           <div className="social-icons flex flex-col gap-3">
-            <span>Find with me</span>
+            <span className="text-white">Find with me</span>
             <div className="flex gap-3">
-              <div className="w-[60px] h-[60px] linear-gradient-1 box-shadow-10 rounded-lg"></div>
-              <div className="w-[60px] h-[60px] linear-gradient-1 box-shadow-10 rounded-lg"></div>
-              <div className="w-[60px] h-[60px] linear-gradient-1 box-shadow-10 rounded-lg"></div>
+              <div className="w-[60px] h-[60px] linear-gradient-1 box-shadow-10 rounded-lg flex items-center justify-center">
+                <img className="w-4/5" alt="Angular" src={linkedin} />
+              </div>
+              <div className="w-[60px] h-[60px] linear-gradient-1 box-shadow-10 rounded-lg flex items-center justify-center">
+                <img className="w-4/5" alt="Angular" src={github} />
+              </div>
+              <div className="w-[60px] h-[60px] linear-gradient-1 box-shadow-10 rounded-lg flex items-center justify-center">
+                <img className="w-4/5" alt="Angular" src={instagram} />
+              </div>
             </div>
           </div>
         </div>
@@ -54,7 +63,7 @@ const Contact = () => {
                   placeholder="Enter mobile number"
                 />
               </div>
-              <div className="flex flex-col gap-2 col-span-2">
+              <div className="flex flex-col gap-2 md:col-span-2">
                 <label className="text-neu">Email</label>
                 <input
                   type="text"
@@ -62,7 +71,7 @@ const Contact = () => {
                   placeholder="Enter email"
                 />
               </div>
-              <div className="flex flex-col gap-2 col-span-2">
+              <div className="flex flex-col gap-2 md:col-span-2">
                 <label className="text-neu">Subject</label>
                 <input
                   type="text"
@@ -70,18 +79,17 @@ const Contact = () => {
                   placeholder="Enter subject"
                 />
               </div>
-              <div className="flex flex-col gap-2 col-span-2">
+              <div className="flex flex-col gap-2 md:col-span-2">
                 <label className="text-neu">Your message</label>
                 <textarea
                   className="w-full  py-3 px-5 rounded-md linear-gradient-1 inner-shadow outline-none focus-within:border-2 focus-within:border-darkred text-white"
                   placeholder="Enter subject"
                 />
               </div>
-              <div className="col-span-2 flex justify-center">
+              <div className="md:col-span-2 flex justify-center">
                 <button
                   type="submit"
-                  className="bg-darkred text-xl font-semibold text-white mx-auto w-[200px] py-3 rounded-md"
-                >
+                  className="bg-darkred text-xl font-semibold text-white mx-auto w-[200px] py-3 rounded-md">
                   Submit
                 </button>
               </div>

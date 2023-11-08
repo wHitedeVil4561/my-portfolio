@@ -9,7 +9,9 @@ const Resume = () => {
   return (
     <div className="flex flex-col gap-10">
       <div className="flex flex-col gap-3 items-center">
-        <div className="experience text-darkred">1+ YEARS OF EXPERIENCE</div>
+        {/* <div className="experience text-darkred">
+          <strong className="text-2xl">1.5</strong>+ YEARS OF EXPERIENCE
+        </div> */}
         <div className="text-3xl text-neu">My Resume</div>
       </div>
       <div className="linear-gradient-1 box-shadow-10 rounded-lg grid grid-cols-1 md:grid-cols-3 text-neu tex-xl font-semibold">
@@ -17,8 +19,7 @@ const Resume = () => {
           className={`w-full flex justify-center items-center text-center rounded-lg py-5 px-8 ${
             index == 0 ? "text-darkred linear-gradient-2 box-shadow-10" : ""
           }`}
-          onClick={() => onChangeStatus(0)}
-        >
+          onClick={() => onChangeStatus(0)}>
           {resume[0]}
         </div>
         <div
@@ -27,8 +28,7 @@ const Resume = () => {
               ? "text-darkred linear-gradient-2 box-shadow-10 rounded-lg"
               : ""
           }`}
-          onClick={() => onChangeStatus(1)}
-        >
+          onClick={() => onChangeStatus(1)}>
           {resume[1]}
         </div>
         <div
@@ -37,8 +37,7 @@ const Resume = () => {
               ? "text-darkred linear-gradient-2 box-shadow-10 rounded-lg"
               : ""
           }`}
-          onClick={() => onChangeStatus(2)}
-        >
+          onClick={() => onChangeStatus(2)}>
           {resume[2]}
         </div>
       </div>
@@ -204,7 +203,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 max-w-[720px] mx-auto w-full">
         <div className="text-3xl text-neu">Development Skill</div>
         <div className="flex flex-col gap-5">
           <div className="flex flex-col ">

@@ -12,6 +12,25 @@ module.exports = {
         darkblack: "#131517",
         lightcream: "#DAF0FF",
       },
+      screens: {
+        sm: "640px",
+        // => @media (min-width: 640px) { ... }
+
+        md: "768px",
+        // => @media (min-width: 768px) { ... }
+        tab: "992px",
+        // => @media (min-width: 992px) { ... }
+
+        lg: "1024px",
+        // => @media (min-width: 1024px) { ... }
+
+        xl: "1280px",
+        // => @media (min-width: 1280px) { ... }
+
+        "2xl": "1536px",
+        lgmax: { max: "1279px" },
+        smmax: { max: "639px" },
+      },
     },
   },
   plugins: [],

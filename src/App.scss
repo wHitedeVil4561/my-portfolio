@@ -4,7 +4,7 @@
 
 @layer components {
   .box-shadow-10 {
-    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    box-shadow: 10px 10px 20px #1c1e22, -10px -10px 20px #262a2e;
   }
   .linear-gradient-1 {
     background: linear-gradient(145deg, #1e2024, #23272b);
@@ -12,15 +12,18 @@
   .linear-gradient-2 {
     background: linear-gradient(to right bottom, #212428, #16181c);
   }
-  .linear-gradient-3{
-    background: linear-gradient(109.08deg, #EC6F66 0%, #F3A183 98.01%);
+  .linear-gradient-3 {
+    background: linear-gradient(109.08deg, #ec6f66 0%, #f3a183 98.01%);
   }
-  .linear-gradient-4{
-    background: linear-gradient(109.08deg, #FF66C0 0%, #FF9DB4 98.01%);;
+  .linear-gradient-4 {
+    background: linear-gradient(109.08deg, #ff66c0 0%, #ff9db4 98.01%);
   }
   .inner-shadow {
     box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset,
       -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+  }
+  .aspect-ratio-11-16 {
+    aspect-ratio: 11/16 !important;
   }
 }
 .app {
